@@ -131,7 +131,7 @@ You are a data-driven behavioral psychologist. Regression analysis shows Sleep w
 ![Dashboard Screen](2%20Dashboard.png)
 
 #### 4. Checkin
-![Checkin Screen](1%20checkin.png)
+![Checkin Screen](1%20checkin.png.png)
 ![Checkin Screen](2%20checkin.png)
 
 #### 3. Crisis Reframing Core ("The Red Button")
