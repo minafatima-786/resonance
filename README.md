@@ -164,5 +164,5 @@ You are a data-driven behavioral psychologist. Regression analysis shows Sleep w
    npm run dev
    ```
 
-5. Open your local network connection space at [http://localhost:3000](http://localhost:3000) to review the app.
+
   
