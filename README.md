@@ -1,7 +1,7 @@
 # 🧠 Resonance — Emotional Intelligence Co-Pilot
 
 ### 🔗 Live Deployed URL
-👉 **[CLICK HERE TO LAUNCH THE LIVE APPLICATION](https://vercel.app)**
+👉 **[CLICK HERE TO LAUNCH THE LIVE APPLICATION](https://resonance-one-chi.vercel.app/)**
 
 ---
 
@@ -120,14 +120,22 @@ You are a data-driven behavioral psychologist. Regression analysis shows Sleep w
 
 ## 📸 Application In Action
 
-#### 1. Glass-morphic Authentication Hub
-![Auth Screen](https://unsplash.com)
+#### 1. Login
+![Auth Screen](Login.png)
 
-#### 2. Empirical Analytics & Regression Dashboard
-![Dashboard Screen](https://unsplash.com)
+#### 2. Onboarding
+![Onboarding Screen](Onboarding.png)
+
+#### 3. Empirical Analytics & Regression Dashboard
+![Dashboard Screen](1%20Dashboard.png)
+![Dashboard Screen](2%20Dashboard.png)
+
+#### 4. Checkin
+![Checkin Screen](1%20checkin.png)
+![Checkin Screen](2%20checkin.png)
 
 #### 3. Crisis Reframing Core ("The Red Button")
-![Crisis Engine Screen](https://unsplash.com)
+![redbutton Screen](redbutton.png)
 
 ---
 
@@ -157,4 +165,4 @@ You are a data-driven behavioral psychologist. Regression analysis shows Sleep w
    ```
 
 5. Open your local network connection space at [http://localhost:3000](http://localhost:3000) to review the app.
-6.
+  
