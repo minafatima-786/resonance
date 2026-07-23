@@ -1,0 +1,150 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 20 14% 12%;
+    --card: 0 0% 100%;
+    --card-foreground: 20 14% 12%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 20 14% 12%;
+    --primary: 173 80% 26%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 38 92% 50%;
+    --secondary-foreground: 20 14% 12%;
+    --muted: 173 30% 95%;
+    --muted-foreground: 173 10% 40%;
+    --accent: 38 92% 50%;
+    --accent-foreground: 20 14% 12%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 173 20% 88%;
+    --input: 173 20% 88%;
+    --ring: 173 80% 26%;
+    --radius: 0.75rem;
+    --chart-1: 173 80% 26%;
+    --chart-2: 38 92% 50%;
+    --chart-3: 200 70% 50%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+  }
+  .dark {
+    --background: 173 30% 8%;
+    --foreground: 0 0% 98%;
+    --card: 173 25% 12%;
+    --card-foreground: 0 0% 98%;
+    --popover: 173 25% 12%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 173 70% 45%;
+    --primary-foreground: 173 30% 8%;
+    --secondary: 38 80% 55%;
+    --secondary-foreground: 173 30% 8%;
+    --muted: 173 20% 18%;
+    --muted-foreground: 173 15% 65%;
+    --accent: 38 80% 55%;
+    --accent-foreground: 173 30% 8%;
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 173 20% 22%;
+    --input: 173 20% 22%;
+    --ring: 173 70% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    background-image: linear-gradient(to bottom right, hsl(173 50% 96%), hsl(0 0% 100%) 45%, hsl(38 80% 96%));
+    min-height: 100vh;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply rounded-2xl border border-white/40 bg-white/60 backdrop-blur-xl shadow-[0_8px_32px_rgba(15,118,110,0.12)];
+  }
+  .dark .glass-card {
+    @apply border-white/10 bg-white/5;
+  }
+  .heading-font {
+    font-family: var(--font-playfair), Georgia, serif;
+  }
+  .body-font {
+    font-family: var(--font-inter), system-ui, sans-serif;
+  }
+}
+
+/* Custom range slider — teal styled */
+input[type='range'].resonance-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 8px;
+  border-radius: 9999px;
+  background: linear-gradient(to right, hsl(173 80% 40%), hsl(173 80% 35%));
+  outline: none;
+  cursor: pointer;
+}
+input[type='range'].resonance-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 26px;
+  height: 26px;
+  border-radius: 9999px;
+  background: hsl(38 92% 50%);
+  border: 3px solid #fff;
+  box-shadow: 0 2px 8px rgba(15, 118, 110, 0.4);
+  transition: transform 0.15s ease;
+}
+input[type='range'].resonance-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.15);
+}
+input[type='range'].resonance-slider::-moz-range-thumb {
+  width: 26px;
+  height: 26px;
+  border-radius: 9999px;
+  background: hsl(38 92% 50%);
+  border: 3px solid #fff;
+  box-shadow: 0 2px 8px rgba(15, 118, 110, 0.4);
+  cursor: pointer;
+}
+
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-out both;
+  }
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+  .animate-pulse-heart {
+    animation: pulseHeart 1.5s ease-in-out infinite;
+  }
+  .animate-fade-in-up {
+    animation: fadeInUp 0.6s ease-out both;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+@keyframes pulseHeart {
+  0%, 100% { transform: scale(1); }
+  15% { transform: scale(1.18); }
+  30% { transform: scale(1); }
+  45% { transform: scale(1.12); }
+  60% { transform: scale(1); }
+}
